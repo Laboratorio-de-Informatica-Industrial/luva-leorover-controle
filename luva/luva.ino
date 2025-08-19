@@ -10,7 +10,7 @@
 ros::NodeHandle nh;
 
 geometry_msgs::Twist twist_msg;
-ros::Publisher twist_pub("leo_main_duque/cmd_vel", &twist_msg);
+ros::Publisher twist_pub("/cmd_vel", &twist_msg);
 std_msgs::Bool thumb_finger_msg;
 std_msgs::Bool index_finger_msg;
 std_msgs::Bool middle_finger_msg;
